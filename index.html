@@ -46,12 +46,13 @@
   <div id="main-content" class="container">
     <div class="jumbotron">
       <img src="images/texan_768.jpg" alt="Texans in flight" class="img-responsive visible-xs">
+      <span id="quote"></span>
     </div>
 
     <div id="home-tiles" class="row">
       
       <div class="col-md-4 col-sm-6 col-xs-12">
-          <div id="academic-tile">
+          <div id="academic-tile" class="tile">
             <ul>
               <li><strong>MS Aerospace Engineering </strong><br>
               Georgia Institute of Tehcnology <br>
@@ -67,7 +68,7 @@
           </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-       <div id="exp-tile">
+       <div id="exp-tile" class="tile">
           <ul>
               <li><strong>Flight Control Analyst</strong><br>
               Jacobs ESSSA Group, NASA MSFC, Huntsville, Al</li>
@@ -81,7 +82,7 @@
           <span>Experience</span></div></a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="skills-tile">
+        <div id="skills-tile" class="tile">
           <ul>
               <li><strong>Key Studies</strong>:<br> Dynamic Systems &amp; Controls, Mechanical Design, Thermodynamics, Fluid Mechanics, Structural Mechanics &amp; Dynamics, Mathematics, Physics, Computer Programming</li>
               <li><strong>Software &amp; Languages</strong>:<br>Solidworks, Ansys Mechanical, MATLAB, MS Office, Latex, Fortran, C++, Python, Java</li>
@@ -92,54 +93,48 @@
       </div>
 
       <div class="col-md-4 col-sm-6 col-xs-12">
-          <div id="msfc-tile">
+          <div id="msfc-tile" class="tile">
             <p>
-              Performed control system analysis, verification and validation support, and stability analysis. To address the time varying nature of the dynamics of a launch vehicle in flight, a stability evaluation technique for the nonlinear time varying launch vehicle dynamics is to incrementally adjust the gain and/or time delay in a time domain simulation until the system exhibits unstable behavior. This technique was implemented by using the Stability Aerospace Vehicle Analysis Tool to simulate the ascent trajectory with varying degrees of stability with an adaptive control algorithm active and inactive. The results show that the adaptive algorithm generally provides an additional 6 dB of gain margin at a small expense to phase margin.
+              Performed control system analysis, verification and validation support, and stability analysis. To address the nonlinear, time varying dynamics of a launch vehicle, a stability analysis technique is to incrementally adjust the gain and/or time delay in a time domain simulation until the system exhibits unstable behavior. This technique was implemented on a simulated ascent trajectory with varying degrees of stability with an adaptive control algorithm active and inactive. The results show that the adaptive algorithm generally provides an additional 6 dB of gain margin.
             </p>
             <span>SLS Flight Controls</span>
           </div>
       </div>
      
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="rlg-tile">
+        <div id="rlg-tile" class="tile">
             <p>
-              Landing on uprepared and uneven surfaces or a pitching and rolling ship represent some of the greatest challenges faced by rotorcraft today. Most rotorcraft have severely limited landing site options. Moreover, landings in complex terrain are performed very slowly. In the CAMM, we are investigating the use of robotic landing gear using both dynamic simulation and experimental laboratory testing. The use of robotic landing gear could enable revolutionary new operational capability for future rotorcraft.
-
-              <br>
-
-              For example, hard landings can be mitigated using the rlg. The resulting impact of a hard landing can result in vehicle damage, structural failure, injuries, etc. The rlg softens the landing by acting as a shock absorber with a large stroke compared with a tradiation landing gear system. My reserach showed that the rlg can reduce peak loads during landing by up to 90% compared to a convential landing gear for multiple landing scenarios.  <a href="#rlg_paper"> See publication</a>
+              Landing on uprepared, sloping surfaces or a moving ship are some of the greatest challenges faced by rotorcraft today. Most rotorcraft have severely limited landing site options. Moreover, landings in complex terrain are performed very slowly. Robotic landing gear (RGL)  can be used to overcome these challenges and enable revolutionary operational capabilities. For example, the damage caused by impact during a hard landing can be mitigated with the RLG. It can soften the impact by acting as a shock absorber with a large stroke compared with traditional landing gear. My research showed that the RLG can reduce peak loads during landing by up to 90% compared to a convential landing gear.  <a href="#rlg_paper"> See publication</a>
             </p>
             <span>Robotic Landing Gear</span>
           </div>
       </div>
 
       <div class="col-md-4 col-sm-6 col-xs-12">
-          <div id="psl-tile">
+          <div id="psl-tile"  class="tile">
             <p>
-              A design of experiments (DOE) approach was used to investigate factors affecting the synthesis of fluorescent polystyrene latex microspheres (PSLs) for use in wind tunnel measurement techniques such as PIV and LDV. PSLs have been used extensively as a seeding material, but additional capability is desired for the measurement of scalar properties of the flow. The ability to measure temperature simultaneously with velocity can provide a greater understanding of the flow physics. To this end, PSLs have been doped with a temperature dependant fluorescent dye. Statistical analysis was used with the DOE to gain insight about what effect different factors had on the particle synthesis process, as well as find the best configuration to produce PSLs of the correct size with a fluorescent dye incorporated well into the particles. <a href="#fdp_paper"> See publication</a>
+              A design of experiments (DOE) approach was used to investigate factors affecting the synthesis of fluorescent polystyrene latex microspheres (PSLs) for use in wind tunnel measurement techniques such as PIV and LDV. The ability to measure temperature simultaneously with velocity can provide a greater understanding of flow physics. To this end, PSLs were doped with a temperature dependant fluorescent dye. The DOE was used to gain insight about what effect different factors had on the particle synthesis process, as well as find the best configuration to produce PSLs of the correct size with the fluorescent dye incorporated well into the particles. <a href="#fdp_paper"> See publication</a>
             </p>
             <span>Fluorescent PSLs</span>
           </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="pzfan-tile">
+        <div id="pzfan-tile" class="tile">
             <p>
-              Although not identical to the motion employed by nature's swimmers and flyers, the simple harmonic oscillations of cantilever-like structures have been shown to provide efficient low-power solutions for applications ranging from thermal management to propulsion. However, in order to quantify their true potential, the resulting flow field and corresponding thrust must be better understood. To this end, a thin, flexible cantilever was actuated via a piezoelectric patch mounted near its base, causing vibration at the first resonance mode. The flow field was measured with particle image velocimetry while the thrust produced by the flow was quantified with a high-resolution scale. An oscillating Reynolds number was used to capture the trends in teh data and a clear relations ship between the operating parameters and resulting thrust was defined. Additionally, two-dimensional flow fields were extracted and used to motivate future geometry and sidwall configurations that could greatly enhance the thrust capabilities of the cantilever by directing the flow downstream in a more efficient manner. <a href="#cant_paper"> See publication</a>
+              Although not identical to the motion of nature's swimmers and flyers, simple harmonic oscillations of cantilever-like structures can provide efficient low-power solutions for applications ranging from thermal management to propulsion. In order to quantify their true potential, the flow field and corresponding thrust must be better understood. To this end, a cantilever was actuated at its resonant frequency via a piezoelectric patch mounted near its base. Flow fields and thrust were quantified and used to motivate future configurations that could greatly enhance thrust capabilities by directing the flow downstream in a more efficient manner. <a href="#cant_paper"> See publication</a>
             </p>
             <span>Cantilever Flow Fields</span>
         </div>
       </div>
       <div class="col-md-8 col-sm-6 col-xs-12">
-        <div id="journal-tile">
-            <p>
-            </p>
+        <div id="journal-tile" class="tile">
             <span>Journal</span>
         </div>
       </div>
 
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div id="pubs-tile">
-            <ul>
+        <div id="pubs-tile", class="tile">
+            <ol>
               <li>
                 Kiefer, J., Johnson, M., Wall, J. &amp; Dominguez, A. (In Submission). Applied Time Domain Stability Margin Assessment for Nonlinear Time-Varying Systems. 40th Annual AAS Guidance &amp; Control Conference 2017. 
               </li>
@@ -159,7 +154,7 @@
               <li>
                 Eastman, A., Kiefer, J., &amp; Kimber, M. (2012). Thrust Measurements and Flow Field Analysis of a Piezoelectrically Actuated Oscillating Cantilever. Volume 1: Symposia, Parts A and B.
               </li>
-            </ul>
+            </ol>
             <span>Publications</span>
         </div>
       </div>
@@ -171,22 +166,14 @@
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Footer</span><br>
-          <hr class="visible-xs">
+        <section class="col-sm-4">
         </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          Street <br>
-          City, State Zip
-          <hr class="visible-xs">
+        <section class="col-sm-4">
         </section>
-        <section id="testimonials" class="col-sm-4">
-          <p>"Insert random quotes here"</p>
-          <p>"And here"</p>
+        <section class="col-sm-4">
         </section>
       </div>
-      <div class="text-center">&copy; Copyright Jacob Michael Kiefer 2016</div>
+      <div class="text-center">&copy; Jacob Michael Kiefer 2016</div>
     </div>
   </footer>
 
@@ -194,5 +181,6 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- <script src="js/random-quote.js"></script> -->
 </body>
 </html>
