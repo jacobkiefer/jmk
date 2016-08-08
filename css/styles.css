@@ -98,40 +98,48 @@ body {
   border: 2px solid #3F0C1F;
 }
 
-#academic-tile, #exp-tile, #skills-tile, #msfc-tile, #rlg-tile, #psl-tile, #pzfan-tile, #pubs-tile, #journal-tile {
-  height: 425px;
+.tile {
+  height: 350px;
   width: 100%;
-  margin-bottom: 15px;
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
+  font-size: 90%;
 }
-#academic-tile:hover, #exp-tile:hover, #skills-tile:hover, #msfc-tile:hover, #rlg-tile:hover, #psl-tile:hover, #pzfan-tile:hover, #pubs-tile:hover, #journal-tile:hover {
+
+.tile:hover{
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
+#academic-tile, #exp-tile, #skills-tile {
+    text-align: center;
+}
+
 #msfc-tile{
-  font-size: 90%;
   background: url('../images/sls_2.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 #rlg-tile{
-  font-size: 90%;
   background: url('../images/rlg_2.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 #psl-tile{
-  font-size: 90%;
   background: url('../images/fdp.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 #pzfan-tile{
-  font-size: 90%;
   background: url('../images/pzfan.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+#journal-tile{
 }
 
 #academic-tile ul li{
@@ -153,24 +161,41 @@ body {
   list-style-type: none;
   margin-bottom: 25px;
 }
-
-#pubs-tile {
-
+#pubs-tile{
+  height: auto;
+  padding-top: 15px;
 }
-
-#pubs-tile ul li{
+#pubs-tile ol{
+    padding-bottom: 15px;
+  }
+#pubs-tile ol li{
   list-style-type: none;
   margin-bottom: 10px;
 }
 
-#academic-tile span, #exp-tile span, #skills-tile span, #msfc-tile span, #rlg-tile span, #psl-tile span, #pzfan-tile span, #pubs-tile span, #journal-tile span {
+.tile span{
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.6em; 
   text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.jumbotron {
+  position: relative;
+}
+.jumbotron span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
   background-color: #000;
   color: #fff;
   opacity: .8;
@@ -184,6 +209,17 @@ body {
     background: url('../images/texan_1200.jpg') no-repeat;
     height: 625px;
   }
+
+  .tile p, .tile ul {
+    position: absolute;
+    top: 50%;
+    width:100%;
+    margin-top: -40%;
+  }
+
+  #academic-tile ul, #exp-tile ul, #skills-tile ul {
+    margin-left: -25px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -192,7 +228,7 @@ body {
 
   .navbar-header{
   height:120px;
-}
+  }
   #logo-img {
     background: url('../images/jmk_medium.png') no-repeat;
     width: 100px;
@@ -207,6 +243,32 @@ body {
     height: 517px;
   }
   /* End Home Page */
+
+  .tile {
+    height: 400px;
+  }
+
+  #academic-tile ul, #exp-tile ul, #skills-tile ul {
+    margin-top: 15%;
+    margin-left: -25px;
+  }
+
+  #msfc-tile p {
+    margin-top: 10%;
+  }
+
+  #rlg-tile p {
+    margin-top: 5%;
+  }
+
+  #psl-tile p {
+    margin-top: 8%;
+  }
+
+  #pzfan-tile p {
+    margin-top: 2%;
+  }
+
 }
 
 /********** Small devices only **********/
@@ -221,6 +283,25 @@ body {
     height: 400px;
   }
   /* End Home Page */
+   #academic-tile ul, #exp-tile ul, #skills-tile ul {
+    margin-top: 12%;
+    margin-left: -25px;
+  }
+  #msfc-tile p {
+    margin-top: 10%;
+  }
+
+  #rlg-tile p {
+    margin-top: 2%;
+  }
+
+  #psl-tile p {
+    margin-top: 5%;
+  }
+
+  #pzfan-tile p {
+    margin-top: 5%;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -261,6 +342,31 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+
+  .tile{
+    height: 320px;
+  }
+
+  #academic-tile ul, #exp-tile ul {
+    margin-top: 5%;
+
+  }
+
+  #skills-tile ul {
+    margin-top: 8%;
+  }
+
+  #msfc-tile p {
+    margin-top: 5%;
+  }
+
+  #psl-tile p {
+    margin-top: 3%;
+  }
+
+  #pzfan-tile p {
+    margin-top: 3%;
+  }
 }
 
 
@@ -275,4 +381,3 @@ body {
   
   /* Home page */
 }
-
